@@ -1,12 +1,27 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Col,Row,Container } from "react-bootstrap";
 import HornedBeasts from './HornedBeasts';
+import Data from './asessts/data.json';
 class Main extends React.Component {
     render() {
         return (
             <>
-                <HornedBeasts title='Unicorn' url='https://www.greenbiz.com/sites/default/files/images/articles/featured/unicorn_sstock.jpg' description='This Unicorn is a fast flyable creature' />
+            <Container>
+            <Row>
+                {Data.map((item, index) => {
+                    return (
+                        <Col lg={4}>
+                            <HornedBeasts title={item.title} imgUrl={item.image_url} description={item.description} />
+                        </Col>
+                    )
 
-                <HornedBeasts title='Antelope' url='https://animals.sandiegozoo.org/sites/default/files/2016-09/animals_hero_spiral_horned.jpg' description='This Antelope is very beautiful' />
+                }
+                )}
+
+
+</Row>
+</Container>
             </>
         )
     }
