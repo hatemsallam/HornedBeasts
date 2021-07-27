@@ -19,6 +19,13 @@ class HornedBeasts extends React.Component {
         })
     }
 
+    dataToApp = () => {
+        this.props.modalActivator (this.props.title, this.props.imgUrl, this.props.description, true  );
+    };
+
+
+
+
     render() {
         return (
             <>
@@ -26,8 +33,8 @@ class HornedBeasts extends React.Component {
 
                 {
                     
-                        <Card style={{ width: "18rem", height: "30rem" }}>
-                            <Card.Img onClick={this.incrementNumOfBeasts} variant="top" src={this.props.imgUrl} />
+                        <Card  onClick={this.incrementNumOfBeasts} style={{ width: "18rem", height: "30rem" }}>
+                            <Card.Img onClick={this.dataToApp}  variant="top" src={this.props.imgUrl} />
                             <Card.Body>
                                 <Card.Title>{this.props.title}</Card.Title>
                                 <Card.Text>
