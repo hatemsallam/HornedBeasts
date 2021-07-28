@@ -1,9 +1,9 @@
-Number and name of feature: ____lab : class 02____________________________
+Number and name of feature: ____lab : class 03____________________________
 
 Estimate of time needed to complete: ___3 hours__
 
-Start time: __1:30__pm_
+Start time: __1:00__pm_
 
-Finish time: ____6:00_pm
+Finish time: ____4:00_pm
 
-Actual time needed to complete: __4 hours and half___
+Actual time needed to complete: __3 hours___
